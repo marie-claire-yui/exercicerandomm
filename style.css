@@ -1,3 +1,10 @@
 *{
 
 }
+
+.test{
+    height: 80px;
+    width:80px;
+    margin: 5px;
+    background-color: rgb(217, 0, 255);
+}

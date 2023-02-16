@@ -35,9 +35,21 @@ console.log(img);
 img.setAttribute('src','img/javascript.png');
 
 
-const div = document.getElementsByClassName("test");
+const test = document.getElementsByClassName("test"); // selection par le nom de la classe
 //console.log(div);
-for (let index=0; index < div.length; index++){
- console.log(div[index].getAttribute('id'));
+for (let index=0; index < test.length; index++){ 
+ console.log(test[index].getAttribute('id'));
 }
+
+
+Array.from(test).forEach(element =>{
+  element.addEventListener(
+    'click',
+    function (e){
+      console.log(e.currentTarget.id)
+    }
+    )
+});
+
+
 
